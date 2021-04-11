@@ -1,0 +1,446 @@
+{
+  "id": "66e5ad5a-3e9e-45bb-aae4-e008ec1e0c5a",
+  "version": "2.0",
+  "name": "ProcessoSeletivo",
+  "url": "https://account.blip.ai",
+  "tests": [{
+    "id": "6b6ef611-b313-4257-a5af-2746c995880f",
+    "name": "LoginInvalido",
+    "commands": [{
+      "id": "8696c17f-bb1f-4bd6-b7b9-26bc4df339b0",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70648545-ab6c-4f43-82d6-9bbf84a458ee",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1046x704",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ebe0b9d-067b-411b-b6da-ad6809fb0858",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=Username", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='ncid-8a13']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e21d409a-4a57-45b2-b834-f8b4f8f62435",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=Username", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='ncid-8a13']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "liviazil@hotmail.com"
+    }, {
+      "id": "71ff62d2-a31c-46a0-90a5-729f33f00311",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='ncid-92b7']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "6bc21c58-8fcc-42e6-bff3-18d9b96b8cd7",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "85e385ac-3567-480b-8c30-f99daf6156d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [
+        ["css=.recaptcha-checkbox-border", "css:finder"],
+        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccc385f3-0799-497e-8e6f-5bdc078db5a7",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e17ef1b-bce5-4aef-9d2c-5fde414c0cae",
+      "comment": "",
+      "command": "click",
+      "target": "id=blip-login",
+      "targets": [
+        ["id=blip-login", "id"],
+        ["name=button", "name"],
+        ["css=#blip-login", "css:finder"],
+        ["xpath=//button[@id='blip-login']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='login-fieldset']/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Entrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "663a2b59-4677-4ccd-b721-af8c0df7c5b7",
+    "name": "EsqueciSenha",
+    "commands": [{
+      "id": "307531f7-e1d3-472a-a53d-8e9a8389c732",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c812e51-495b-4078-89c3-e63042ecddee",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1046x704",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b26eeebc-07dd-4a94-915d-e0252e20175e",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-forgot-password",
+      "targets": [
+        ["id=login-forgot-password", "id"],
+        ["linkText=Esqueceu sua senha?", "linkText"],
+        ["css=#login-forgot-password", "css:finder"],
+        ["xpath=//a[contains(text(),'Esqueceu sua senha?')]", "xpath:link"],
+        ["xpath=//a[@id='login-forgot-password']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='login-fieldset']/p/small/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/forgot-password?returnUrl=%2Faccount')]", "xpath:href"],
+        ["xpath=//small/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Esqueceu sua senha?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d8aec3b-3ccf-448d-aaca-3614ccd48843",
+      "comment": "",
+      "command": "click",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//div[@id='ncid-0a07']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8df21b7-93f2-440f-9bad-30f1ec6aac00",
+      "comment": "",
+      "command": "type",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//div[@id='ncid-0a07']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "liviazil@hotmail.com"
+    }, {
+      "id": "c23f1fc2-dcc0-4364-884e-d90aba2262a7",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//button[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='blip-forgot-password-page']/section/main/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "85b4d5f5-885c-4d1a-ae4d-307fb768f5bf",
+    "name": "CadastroGratis",
+    "commands": [{
+      "id": "945d90ad-5061-4a83-bee1-9be255d3a44e",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a50c107-775f-4333-b66c-6de4546a3b8e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1046x704",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f8f5531-b21a-4cbe-b6bd-9788891ec091",
+      "comment": "",
+      "command": "click",
+      "target": "id=blip-register",
+      "targets": [
+        ["id=blip-register", "id"],
+        ["linkText=Cadastre-se grátis", "linkText"],
+        ["css=#blip-register", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastre-se grátis')]", "xpath:link"],
+        ["xpath=//a[@id='blip-register']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='login-fieldset']/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/register?returnUrl=%2Faccount')]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastre-se grátis')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4652a29-dc10-44a2-bda0-0accd5317010",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ncid-b92a .bp-label",
+      "targets": [
+        ["css=#ncid-b92a .bp-label", "css:finder"],
+        ["xpath=//div[@id='ncid-b92a']/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Nome completo *')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4770b8e-5575-4c97-ad50-8877a81e9c15",
+      "comment": "",
+      "command": "click",
+      "target": "id=FullName",
+      "targets": [
+        ["id=FullName", "id"],
+        ["name=FullName", "name"],
+        ["css=#FullName", "css:finder"],
+        ["xpath=//input[@id='FullName']", "xpath:attributes"],
+        ["xpath=//div[@id='ncid-b92a']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f253d13-2ce5-41bb-8f92-f28dd5e8d129",
+      "comment": "",
+      "command": "type",
+      "target": "id=FullName",
+      "targets": [
+        ["id=FullName", "id"],
+        ["name=FullName", "name"],
+        ["css=#FullName", "css:finder"],
+        ["xpath=//input[@id='FullName']", "xpath:attributes"],
+        ["xpath=//div[@id='ncid-b92a']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "LÍVIA ZILBERBERG"
+    }, {
+      "id": "a2d614b5-9928-4c93-9bc3-93177da245ba",
+      "comment": "",
+      "command": "click",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//div[@id='ncid-3c9c']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed2cef8b-cc73-40ad-802e-beda603e25dd",
+      "comment": "",
+      "command": "type",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//div[@id='ncid-3c9c']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "liviazil@hotmail.com"
+    }, {
+      "id": "a4b5e33a-18e6-4b81-be4f-1b5f06584dff",
+      "comment": "",
+      "command": "click",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[@id='ncid-61d7']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47193f23-7aa4-474c-be3d-5faeb3e95860",
+      "comment": "",
+      "command": "type",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[@id='ncid-61d7']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "0d88b64c-3325-4977-a376-c3b4143d8483",
+      "comment": "",
+      "command": "click",
+      "target": "id=PhoneNumber",
+      "targets": [
+        ["id=PhoneNumber", "id"],
+        ["name=PhoneNumber", "name"],
+        ["css=#PhoneNumber", "css:finder"],
+        ["xpath=//input[@id='PhoneNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='ncid-7767']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7292cd2b-e1a8-4b8f-a26e-db67d14f3456",
+      "comment": "",
+      "command": "type",
+      "target": "id=PhoneNumber",
+      "targets": [
+        ["id=PhoneNumber", "id"],
+        ["name=PhoneNumber", "name"],
+        ["css=#PhoneNumber", "css:finder"],
+        ["xpath=//input[@id='PhoneNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='ncid-7767']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "+55 11 99887 7663"
+    }, {
+      "id": "9e9c6a14-1176-4982-9add-51297bc25910",
+      "comment": "",
+      "command": "click",
+      "target": "css=.false > .bp-label",
+      "targets": [
+        ["css=.false > .bp-label", "css:finder"],
+        ["xpath=//div[@id='ncid-e060']/div/label", "xpath:idRelative"],
+        ["xpath=//div[5]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Site da empresa *')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3925f431-70c9-4e8f-acf7-8a67c776630c",
+      "comment": "",
+      "command": "click",
+      "target": "id=CompanySite",
+      "targets": [
+        ["id=CompanySite", "id"],
+        ["name=CompanySite", "name"],
+        ["css=#CompanySite", "css:finder"],
+        ["xpath=//input[@id='CompanySite']", "xpath:attributes"],
+        ["xpath=//div[@id='ncid-e060']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79d79c04-345d-4d8e-b20a-87f11079c07f",
+      "comment": "",
+      "command": "type",
+      "target": "id=CompanySite",
+      "targets": [
+        ["id=CompanySite", "id"],
+        ["name=CompanySite", "name"],
+        ["css=#CompanySite", "css:finder"],
+        ["xpath=//input[@id='CompanySite']", "xpath:attributes"],
+        ["xpath=//div[@id='ncid-e060']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/input", "xpath:position"]
+      ],
+      "value": "www.sitedaempresa.com.br"
+    }, {
+      "id": "8fee4106-ccf2-4679-868b-fe7cd3becbad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.blip-select__input",
+      "targets": [
+        ["css=.blip-select__input", "css:finder"],
+        ["xpath=//input[@value='Selecione']", "xpath:attributes"],
+        ["xpath=//div[@id='ncid-038e']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3b6012f-fd09-4475-b78e-672d38774b61",
+      "comment": "",
+      "command": "click",
+      "target": "css=#blip-select__option-64f811e7-8b3c-1ff1-bda4-f8396b9716d0 .blip-select__option__label",
+      "targets": [
+        ["css=#blip-select__option-64f811e7-8b3c-1ff1-bda4-f8396b9716d0 .blip-select__option__label", "css:finder"],
+        ["xpath=//li[@id='blip-select__option-64f811e7-8b3c-1ff1-bda4-f8396b9716d0']/div/span", "xpath:idRelative"],
+        ["xpath=//li/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1 a 4 funcionários')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1aefdd82-e33c-4314-accc-7cd8b6ff2291",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex > .hydrated",
+      "targets": [
+        ["css=.flex > .hydrated", "css:finder"],
+        ["xpath=//form[@id='register-form']/div[2]/bds-checkbox", "xpath:idRelative"],
+        ["xpath=//bds-checkbox", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff63b4dd-7a52-4a30-ba08-7d5ad2576a4f",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//button[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//form[@id='register-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastre-se grátis')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f472ebe9-ea78-45ea-9aed-edaa8a154f50",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://account.blip.ai/"],
+  "plugins": []
+}
